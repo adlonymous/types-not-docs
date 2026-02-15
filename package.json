@@ -1,0 +1,46 @@
+{
+  "name": "types-not-docs",
+  "version": "0.1.0",
+  "description": "Generate markdown documentation from TypeScript types",
+  "main": "dist/cli.js",
+  "bin": {
+    "types-not-docs": "./bin/types-not-docs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "documentation",
+    "markdown",
+    "types",
+    "cli",
+    "api-reference",
+    "sdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/types-not-docs.git"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "glob": "^13.0.3",
+    "ts-morph": "^27.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
+  }
+}
